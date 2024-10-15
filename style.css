@@ -39,10 +39,9 @@
 
 .nav-projects-menu-outline {
   text-align: center;
-
-  background-color: darkgray;
-  height: 35px;
+  height: 50px;
   width: 100%;
+  background-color:gray;
 }
 
 .projects-study-group-platform-outline {
@@ -80,11 +79,14 @@
   height: 100%;
   width: 100%;
   visibility: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-study-group-section-problem {
   visibility: hidden;
-  width: 30%;
+  width: 25%;
+  height: 50%;
   margin: 10px;
   padding: 20px 10px;
   background: gray;
@@ -92,7 +94,17 @@
 
 .main-study-group-section-affinity {
   visibility: hidden;
-  width: 30%;
+  width: 25%;
+  height: 50%;
+  margin: 10px;
+  padding: 20px 10px;
+  background: gray;
+}
+
+.main-study-group-section-sketch {
+  visibility: hidden;
+  width: 25%;
+  height: 50%;
   margin: 10px;
   padding: 20px 10px;
   background: gray;
@@ -111,7 +123,34 @@
   filter: brightness(85%);
 }
 
-.section-image {
+.about-button {
+  width: 100%;
   height: 100%;
+  background-color: gray;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.about-button:hover {
+  filter: brightness(85%);
+}
+
+.skills-button {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.skills-button:hover {
+  filter: brightness(85%);
+}
+
+.section-image {
+  height: 50%;
   width: 100%;
 }
+
