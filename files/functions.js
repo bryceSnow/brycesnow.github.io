@@ -9,5 +9,6 @@ function on_nav_bar_press(c) {
         document.getElementsByClassName("main-study-group-section-problem")[0].style.visibility = document.getElementsByClassName("main-study-group-section-problem")[0].style.visibility == "visible" ? "hidden" : "visible";
         document.getElementsByClassName("main-study-group-section-affinity")[0].style.visibility = document.getElementsByClassName("main-study-group-section-affinity")[0].style.visibility == "visible" ? "hidden" : "visible";
         document.getElementsByClassName("main-study-group-section-sketch")[0].style.visibility = document.getElementsByClassName("main-study-group-section-sketch")[0].style.visibility == "visible" ? "hidden" : "visible";
+        document.getElementsByClassName("main-study-group-section-prototype")[0].style.visibility = document.getElementsByClassName("main-study-group-section-prototype")[0].style.visibility == "visible" ? "hidden" : "visible";
     }
 }
