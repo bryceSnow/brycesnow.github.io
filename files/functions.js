@@ -1,14 +1,10 @@
-function change_dark_state() {
-    document.getElementsByTagName("body")[0].style.backgroundColor = document.getElementsByTagName("body")[0].style.backgroundColor == "white" ? "black" : "white";
-    document.getElementsByTagName("body")[0].style.color = document.getElementsByTagName("body")[0].style.color == "black" ? "whitesmoke" : "black";
-}
+document.addEventListener("DOMContentLoaded", function() {
+    nav_press("about"); // defaults to the about section on the load of page
+});
 
-function on_nav_bar_press(c) {
-    if(c == "study") {
-        document.getElementsByClassName("main-study-group")[0].style.visibility = document.getElementsByClassName("main-study-group")[0].style.visibility == "visible" ? "hidden" : "visible";
-        document.getElementsByClassName("main-study-group-section-problem")[0].style.visibility = document.getElementsByClassName("main-study-group-section-problem")[0].style.visibility == "visible" ? "hidden" : "visible";
-        document.getElementsByClassName("main-study-group-section-affinity")[0].style.visibility = document.getElementsByClassName("main-study-group-section-affinity")[0].style.visibility == "visible" ? "hidden" : "visible";
-        document.getElementsByClassName("main-study-group-section-sketch")[0].style.visibility = document.getElementsByClassName("main-study-group-section-sketch")[0].style.visibility == "visible" ? "hidden" : "visible";
-        document.getElementsByClassName("main-study-group-section-prototype")[0].style.visibility = document.getElementsByClassName("main-study-group-section-prototype")[0].style.visibility == "visible" ? "hidden" : "visible";
-    }
+
+function nav_press(id) {
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => section.classList.remove('active')); // hide all sections
+    document.getElementById(id).classList.add('active'); // reveal section by id
 }
