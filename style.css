@@ -113,3 +113,16 @@ body {
   width: 200px;
 }
 /* ------------------------------------------------- */
+
+/* brawl ------------------------------------------- */
+#brawl.active {
+  padding-top: 70px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.brawl-image {
+  height: 200px;
+  width: 200px;
+}
