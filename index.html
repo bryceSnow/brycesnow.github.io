@@ -1,3 +1,11 @@
+<!-- Joshua Snowden 2024 -->
+
+<!--
+Changes for Final Website:
+    - Removed Contact nav-item
+    - Added comments to html for navigation
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,24 +17,28 @@
     <body>
 
         <div class="navbar">
-
+            
+            <!-- "button" for the about page (will automatically load this on refresh) -->
             <div class="nav-item" onclick="nav_press('about')">About</div>
 
+            <!-- Dropdown for current projects -->
             <div class="nav-item">Current Projects
                 <div class="dropdown">
                     <div class="dropdown-item" onclick="nav_press('study')">Study Group App</div>
                     <div class="dropdown-item" onclick="nav_press('brawl')">Brawl Stars API Python</div>
                 </div>
             </div>
+            
+            <!-- Dropdown for completed projects (I do not have any yet so there is nothing here) -->
             <div class="nav-item">Completed Projects
                 <div class="dropdown">
                     <div class="dropdown-item">Nothing here yet!!</div>
                 </div>
             </div>
-            <div class="nav-item">Contact</div>
+            
         </div>
 
-        <!-- Eventually this will look better -->
+        <!-- About section -->
         <div class="content-section" id="about">
             <h2> About Me </h2>
             <img src="images/profile.png" class="personalImage">
@@ -37,6 +49,7 @@
             <a href="files/resume.pdf">Click here for my resume</a>
         </div>
 
+        <!-- Study group App section -->
         <div class="content-section" id="study">
             <section class="study-group">
                 <a href="files/statement.pdf">
@@ -76,6 +89,7 @@
             </section>
         </div>
 
+        <!-- Brawl Stars API Project (Includes a github repository) -->
         <div class="content-section" id="brawl">
             <h1>BrawlPY</h1>
             <h3>Compact and secure library for accessing the Brawl Stars API</h3>
@@ -91,5 +105,6 @@
 
     </body>
 
+    <!-- script for navigation and loading fuctionality -->
     <script src="files/functions.js"></script>
 </html>

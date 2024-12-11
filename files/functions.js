@@ -1,3 +1,4 @@
+// Joshua Snowden 2024
 document.addEventListener("DOMContentLoaded", function() {
     nav_press("about"); // defaults to the about section on the load of page
 });
